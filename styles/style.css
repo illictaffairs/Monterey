@@ -1,0 +1,121 @@
+/*import fonts, all copyright to apple, used only for educational purposes*/
+@font-face {
+	font-family: "SFProDisplay";
+	src: url("../fonts/SFProDisplay.woff");
+	font-weight:normal;
+}
+@font-face {
+	font-family: "SFProDisplay";
+	src: url('../fonts/SFProDisplay-Medium.woff');
+	font-weight:bold;
+}
+@font-face {
+  font-family: "SFSymbols";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/SFSymbols.ttf") format("truetype");
+}
+*{
+	padding:0;
+	margin:0;
+	font-family: SFProDisplay, serif;
+}
+body{
+	background: url('../images/4.jpg');
+	background-size:cover;
+	background-position:top;
+	background-repeat: no-repeat;
+	background-color:black;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+.menubar{
+	z-index: 10;
+	position:fixed;
+	filter: brightness(100%);
+	display:inline-block;
+	width:100%;
+	min-height:auto;
+	backdrop-filter: blur(250px);
+}
+.menubar ul li{
+	font-size:1.1rem;
+	list-style:none;
+	float:left;
+	padding:0.4em;
+}
+.menubar ul li:hover{
+	border-radius:8px;
+	background-color:rgba(255,255,255, 0.1);
+}
+.menubar ul li:focus-within{
+	border-radius:8px;
+	background-color:#007bff;
+}
+.menubar a:focus-within{
+	color:white;
+}
+.hero_title{
+	font-family:SFProDisplay;
+	font-weight:bold;
+}
+.menu_right{
+	float:right;
+	align-items: center;
+}
+.siri{
+	width:1.1em;
+	height:1.1em;
+	background-image:url("../images/siri.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cc{
+	width:1.1em;
+	height:1.1em;
+	background-image:url("../images/cc.png");
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;	
+}
+.SFSymbols{
+	font-family:SFSymbols;
+}
+.dropdown{
+	
+	position: absolute;
+	display:inline-block;
+}
+.dropdown_content{
+
+	z-index:9;
+	display:none;
+	padding:8px;
+	margin-left: -1.3em;
+	margin-top:40px;
+	position: absolute;
+	border-radius:10px;
+	min-width:14rem;
+	background:rgba(0,0,0,0.3);
+	backdrop-filter: blur(250px);
+}
+.dropdown_content ul li{
+	margin-bottom:3px;
+	margin-top: 3px;
+	width:94%;
+}
+hr{
+	opacity:0.30;
+	border:solid;
+	background-color:rgba(255, 255, 255, 1);
+	border-width:0.1px;
+	border-color:rgba(255, 255, 255, 1);
+}
+.dropdown_content ul li:hover{
+	border-radius:7px;
+	background-color:#007bff;
+}
+.show{display:block;}

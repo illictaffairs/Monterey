@@ -1,7 +1,4 @@
 # Monterey
-scrap macos monterey project on html.
-test project ill probably never finish
-do not copy.
-fonts by apple, images by apple, code by me,
-took me two around days.
-btw first repo
+scrap macos monterey project
+works- apple menu in menubar
+not working - everything else
